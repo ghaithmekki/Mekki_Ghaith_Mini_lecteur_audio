@@ -47,6 +47,8 @@ button{
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Playlist box */
@@ -72,6 +74,6 @@ button{
 
 /* active track */
 .track.active {
-  background: #555;
+  background: #555555;
 }
 
