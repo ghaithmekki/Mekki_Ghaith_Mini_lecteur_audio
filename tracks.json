@@ -1,13 +1,20 @@
 [
-     {
-    "title": "Test Track 1",
-    "artist": "SoundHelix",
-    "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-  },
-  
   {
-    "title": "Test Track 2",
-    "artist": "Cambridge English",
-    "src": "https://www.cambridgeenglish.org/images/153149-movers-sample-listening-test-vol2.mp3"
+    "title": "No More Tears",
+    "artist": "Ozzy Osbourne",
+    "src": "audio/Ozzy Osbourne - No More Tears (Official Audio).mp3",
+    "cover": "images/no_more_tears.jpg"
+  },
+  {
+    "title": "Gold",
+    "artist": "Oberhofer",
+    "src": "audio/Gold.mp3",
+    "cover": "images/gold.jpg"
+  },
+  {
+    "title": "Obstacles",
+    "artist": "Syd Matters",
+    "src": "audio/Syd Matters - Obstacles.mp3",
+    "cover": "images/obstacles.jpg"
   }
 ]

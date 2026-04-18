@@ -29,8 +29,49 @@ button{
     animation: pulse 1s infinite;
 }
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+#progress {
+  width: 100%;
+  margin: 15px 0;
 }
+
+#cover {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Playlist box */
+.playlist {
+  width: 250px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: #222;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.track {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.track:hover {
+  background: #333;
+}
+
+/* active track */
+.track.active {
+  background: #555;
+}
+
