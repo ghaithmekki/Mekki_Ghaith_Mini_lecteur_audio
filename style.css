@@ -1,0 +1,36 @@
+body{
+    font-family:Arial ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(44, 0, 67);
+    color: white;
+    
+
+}
+
+.player{
+    text-align: center;
+    background: black;
+    padding: 50px;
+    border-radius: 40px;
+    width: 100% ;
+    max-width: 300px;
+}
+
+button{
+    font-size:20px;
+    margin: 10px;
+    
+}
+
+.playing{
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
