@@ -6,7 +6,8 @@ let volume=document.getElementById("volume");
 let title=document.getElementById("title");
 let artist =document.getElementById("artist");
 let cover = document.getElementById("cover");
-
+let currentTimeEl = document.getElementById("current-time");
+let durationEl = document.getElementById("duration");
 
 let tracks=[]
 let current= 0;
@@ -133,5 +134,28 @@ function updateActiveTrack() {
 }
 
 
+function formatTime(time) {
+  let minutes = Math.floor(time / 60);
+  let seconds = Math.floor(time % 60);
 
- 
+  if (seconds < 10) {
+    seconds = "0" + seconds;
+  }
+
+  return minutes + ":" + seconds;
+}
+
+audio.addEventListener("timeupdate", () => {
+  if (audio.duration) {
+    progress.value = (audio.currentTime / audio.duration) * 100;
+    currentTimeEl.textContent = formatTime(audio.currentTime);
+  }
+});
+
+audio.addEventListener("loadedmetadata", () => {
+  durationEl.textContent = formatTime(audio.duration);
+});
+
+audio.addEventListener("ended", () => {
+  nextBtn.click();
+});

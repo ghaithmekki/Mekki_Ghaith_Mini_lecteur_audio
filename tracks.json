@@ -1,20 +1,32 @@
 [
   {
-    "title": "No More Tears",
-    "artist": "Ozzy Osbourne",
-    "src": "audio/Ozzy Osbourne - No More Tears (Official Audio).mp3",
-    "cover": "images/no_more_tears.jpg"
-  },
-  {
     "title": "Gold",
     "artist": "Oberhofer",
     "src": "audio/Gold.mp3",
     "cover": "images/gold.jpg"
   },
   {
+    "title": "No More Tears",
+    "artist": "Ozzy Osbourne",
+    "src": "audio/Ozzy Osbourne - No More Tears (Official Audio).mp3",
+    "cover": "images/no_more_tears.jpg"
+  },
+  {
     "title": "Obstacles",
     "artist": "Syd Matters",
     "src": "audio/Syd Matters - Obstacles.mp3",
     "cover": "images/obstacles.jpg"
+  },
+  {
+    "title": "Live Forever",
+    "artist": "Oasis",
+    "src": "audio/Live Forever.mp3",
+    "cover": "images/OasisDefinitelyMaybealbumcover.jpg"
+  },
+  {
+    "title": "All Apologies",
+    "artist": "Nirvana",
+    "src": "audio/Nirvana - All Apologies [Lyrics].mp3",
+    "cover": "images/Nirvana.jpg"
   }
 ]
