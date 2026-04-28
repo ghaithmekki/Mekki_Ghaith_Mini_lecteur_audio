@@ -72,7 +72,9 @@ Le lecteur s’adapte automatiquement :
 ---
 
 ## 🔗 Lien GitHub Pages
+https://ghaithmekki.github.io/Mekki_Ghaith_Mini_lecteur_audio/
 
+## 📂 Code source
 https://github.com/ghaithmekki/Mekki_Ghaith_Mini_lecteur_audio
 
 ---
