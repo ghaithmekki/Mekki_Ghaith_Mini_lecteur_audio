@@ -28,5 +28,17 @@
     "artist": "Nirvana",
     "src": "audio/Nirvana - All Apologies [Lyrics].mp3",
     "cover": "images/Nirvana.jpg"
+  },
+  {
+    "title": "Yana Yana",
+    "artist": "Sabah",
+    "src": "audio/Yana Yana - Sabah يانا يانا - صباح.mp3",
+    "cover": "images/yana.png"
+  },
+  {
+    "title": "Holm",
+    "artist": "EMEL",
+    "src": "audio/E M E L - Holm (A Dream) (Official Video).mp3",
+    "cover": "images/holm.jpg"
   }
 ]
