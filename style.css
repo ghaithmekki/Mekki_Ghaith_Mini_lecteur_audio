@@ -1,14 +1,23 @@
 body{
     font-family:Arial ;
-    display: flex;
-     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: flex;              /* Active Flexbox pour centrer le contenu */ 
+     flex-direction: column;    /* Aligne  verticalement */
+    justify-content: center;    /* Centre verticalement */
+    align-items: center;        /* Centre horizontalement */
+    min-height: 100vh;           /* Prend toute la hauteur de l'écran */
     background: rgb(28, 1, 43);
-    color: white;
+    color: rgb(81, 112, 150);
     
 
+}
+
+.player{
+    text-align: center;
+    background: rgb(4, 4, 30);
+    padding: 50px;
+    border-radius: 40px;
+    width: 100% ;
+    max-width: 300px;  /* Limite la largeur pour garder le lecteur compact */
 }
 
 .app-title {
@@ -16,7 +25,7 @@ body{
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 5px;
-  letter-spacing: 2px;
+  letter-spacing: 2px; /*Espacement entre les lettres */
 }
 
 .subtitle {
@@ -27,18 +36,16 @@ body{
   margin-left: 10%;
 }
 
-.player{
-    text-align: center;
-    background: rgb(4, 4, 30);
-    padding: 50px;
-    border-radius: 40px;
-    width: 100% ;
-    max-width: 300px;
-}
+
 
 button{
+  background: transparent; /* Supprime le fond par défaut des boutons */
+    border: none; /* Supprime la bordure par défaut */
+ 
+    color: aqua;
     font-size:20px;
     margin: 10px;
+    cursor: pointer;
     
 }
 
@@ -46,19 +53,20 @@ button{
 #progress {
   width: 100%;
   margin: 15px 0;
+  cursor: pointer;
 }
 
 #cover {
   width: 200px;
   height: 200px;
-  object-fit: cover;
+  object-fit: cover; object-fit: cover; /* l’image remplit le carré sans être déformée */
   border-radius: 15px;
   margin-bottom: 15px;
   
 }
 
 .container {
-  display: flex;
+  display: flex;  /* Met le lecteur et la playlist côte à côte */
   gap: 20px;
   align-items: flex-start;
   justify-content: center;
@@ -77,20 +85,24 @@ button{
 
 .track {
   padding: 10px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #333; /* Ligne de séparation*/
   cursor: pointer;
   transition: 0.2s;
 }
 
 .track:hover {
   background: #333;
+
 }
 
 /* active track */
 .track.active {
   background: #555555;
+
 }
 
+
+/* responsive (Mobiles)  */
 @media (max-width: 768px) {
   body {
     height: auto;
@@ -98,7 +110,7 @@ button{
   }
 
   .container {
-    flex-direction: column;
+    flex-direction: column; /* Empile le lecteur et la liste verticalement sur mobile */
     align-items: center;
   }
 
@@ -108,13 +120,18 @@ button{
   }
 
   .playlist {
-    width: 90%;
+    width: 400px;
+    max-height: 400px; /* Limite la hauteur de la liste */
+    overflow-y: auto; /* Ajoute une barre de défilement si la liste est longue */
+    background: #222;
+    border-radius: 15px;
+    padding: 10px;
   }
 }
 
 .time {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Place le temps actuel à gauche et la durée à droite */
   font-size: 14px;
   opacity: 0.8;
 }
